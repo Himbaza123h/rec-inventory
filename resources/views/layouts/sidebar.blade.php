@@ -94,39 +94,35 @@
             @else
                 <ul>
                     <li class="">
-                        <a href="index" class="waves-effect waves-light "><i
+                        <a href="{{ route('home') }}" class="waves-effect waves-light "><i
                                 class="ion-ios7-gear"></i><span>Dashboard</span></a>
                     </li>
                     <!-- <li class="">
                                 <a href="list" class="waves-effect waves-light "><i class="ion-bag"></i><span>Items</span></a>
                             </li> -->
                     <li class="">
-                        <a href="sell" class="waves-effect waves-light "><i class="ion-bag"></i><span>Sell</span></a>
+                        <a href="{{ route('seller.sell.index') }}" class="waves-effect waves-light "><i class="ion-bag"></i><span>Sell</span></a>
                     </li>
                     <li class="">
-                        <a href="stok" class="waves-effect waves-light "><i
+                        <a href="{{ route('seller.stock.index') }}" class="waves-effect waves-light "><i
                                 class="ion-ios7-gear"></i><span>Stock</span></a>
                     </li>
                     <li>
-                        <a href="sellinvoices" class="waves-effect waves-light"><i
+                        <a href="{{ route('seller.invoice.index') }}" class="waves-effect waves-light"><i
                                 class="ion-document"></i><span>Invoices</span></a>
                     </li>
-                    <li>
+                    {{-- <li>
                         <a href="sellpinv" class="waves-effect waves-light"><i
                                 class="ion-clipboard"></i><span>Proforma
                                 Invoice</span></a>
                     </li>
                     <li><a href="requestInvoices" class="waves-effect waves-light"><i
-                                class="ion-document-text"></i>Requested Invoices</a></li>
+                                class="ion-document-text"></i>Requested Invoices</a></li> --}}
                     <li class="has_sub">
-                        <a href="#" class="waves-effect waves-light"><i
+                        <a href="{{ route('seller.report.index') }}" class="waves-effect waves-light"><i
                                 class="ion-ios7-pulse-strong"></i><span>Reports</span>
                             <span class="pull-right"><i class="md md-add"></i></span>
                         </a>
-                        <ul class="list-unstyled">
-                            <li><a href="sellreport">My Report</a></li>
-                            <li><a href="rqreport">Requested Item</a></li>
-                        </ul>
                     </li>
                 </ul>
             @endif
